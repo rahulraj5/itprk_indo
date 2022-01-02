@@ -1,0 +1,373 @@
+.text{
+    font-size: 22px;
+    text-align: center;
+    font-family:sans-serif !important;
+    color: white;
+    background:#840512;
+    letter-spacing: 2px;
+     text-align: center;
+     padding: 4px;
+   
+  }
+
+@media only screen and (max-width:767.98px) {
+    .productlistsidebar{
+      display: none;
+    }
+    .price-filter{
+      float: left !important;
+    }
+    #hamtitle{
+      float: right !important;
+    }
+  }
+
+@media only screen and (min-width: 767.98px ){
+    #hamtitle{
+    display: none;   
+  }
+
+}
+ 
+nav ul{
+    list-style: none;
+
+
+  }
+
+nav ul{
+    list-style: none;
+    padding:0;
+
+  }
+nav ul li a{
+  
+  position: relative;
+  font-family:sans-serif !important;
+  font-size: 15px !important;
+
+}
+.caption{
+  
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+nav ul ul{
+  position: static;
+  display: none;
+}
+nav ul .feat-show.show{
+  display: block;
+}
+
+nav ul ul li a{
+  padding-left:40px !important;
+
+  
+}
+.cado{
+      position: absolute;
+    /* top: 50%; */
+    bottom: 11px;
+    right: 9px;
+    font-size: 22px;
+    /*transform: translateY(-50%);
+    transition: transform 0.4s;*/
+}
+
+.imgtitle{
+  border:5px solid white;
+}
+
+
+/*.cado:hover{
+  transform: translateY(-50%) rotate(-180deg);
+}  */
+
+.card-c{
+  background-color:#eae7e7 !important;
+}
+.card-title{
+  font-size: 15px;
+  font-weight: bolder !important;
+}
+.card-title-2{
+  font-size:13px;
+  font-weight: 500 !important;
+}
+.shopicon{
+  color: grey !important;
+
+}
+.electronics{
+  list-style: none;
+}
+.brand-show{
+  display: block;
+}
+.optiontitle{
+  font-size: 13px !important;
+
+}
+.checkb{
+  font-family: sans-serif !important;
+  font-size: 16px !important;
+  font-weight: bolder !important;
+}
+.electronics li span{
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------
+.widget-content li {
+  list-style: none;
+}
+#item li label{
+  font-weight: bolder;
+  font-size: 14px;
+  font-family: auto !important;
+
+}
+.title-for-list{
+  background-color: #124b56;
+}
+
+.title-for-list a {
+  color: white !important;
+}
+.productlistsidebar{
+  margin-top:12px;
+  margin-bottom: 12px;
+  padding: 0px;
+  z-index: px;
+}
+
+@media only screen and (max-width: 800px){
+  .productlistsidebar{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .maint{
+    display: none;
+  }
+  .dropdown-toggle{
+    display: none;
+  }
+
+}
+
+
+@media only screen and (min-width: 800px){
+  
+  .maintt{
+    display: none;
+  }
+  
+  }
+
+.sidebar_1{
+  display:contents;
+}
+
+#content{
+  margin-top: 12px;
+
+}
+.price-filter{
+  
+border-radius: 4px;
+background-color:#eae7e7;
+
+}
+.btn1{
+  padding: 4px !important;
+  box-shadow: none;
+  margin: 0px !important;
+  border-radius: 0px !important;
+}
+
+
+.checked {
+  color: orange;
+}
+
+.slider-labels {
+  margin-top: 10px;
+}
+.sort{
+  border: 1px solid black;
+}
+
+.pimage{
+  width: 200px;
+  height: 550px;
+}
+
+.buy-btn{
+  font-size: 12px;
+  text-transform: unset;
+  padding:  8px;
+}
+.optiontitle{
+  font-family:Roboto,Arial,sans-serif !important;
+  font-size: 15px;
+}
+
+
+
+
+
+/* Functional styling;
+ * These styles are required for noUiSlider to function.
+ * You don't need to change these rules to apply your design.
+ */
+.noUi-target,.noUi-target * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.noUi-target {
+  position: relative;
+  direction: ltr;
+}
+
+.noUi-base {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+/* Fix 401 */
+}
+
+.noUi-origin {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.noUi-handle {
+  position: relative;
+  z-index: 1;
+}
+
+.noUi-stacking .noUi-handle {
+/* This class is applied to the lower origin when
+   its values is > 50%. */
+  z-index: 10;
+}
+
+.noUi-state-tap .noUi-origin {
+  -webkit-transition: left 0.3s,top .3s;
+  transition: left 0.3s,top .3s;
+}
+
+.noUi-state-drag * {
+  cursor: inherit !important;
+}
+
+/* Painting and performance;
+ * Browsers can paint handles in their own layer.
+ */
+.noUi-base,.noUi-handle {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+/* Slider size and handle placement;
+ */
+.noUi-horizontal {
+  height: 4px;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  left: -7px;
+  top: -7px;
+  background-color: #124b56;
+}
+
+/* Styling;
+ */
+.noUi-background {
+  background: #D6D7D9;
+}
+
+.noUi-connect {
+  background: #124b56;
+  -webkit-transition: background 450ms;
+  transition: background 450ms;
+}
+
+.noUi-origin {
+  border-radius: 2px;
+}
+
+.noUi-target {
+  border-radius: 2px;
+}
+
+.noUi-target.noUi-connect {
+}
+
+/* Handles and cursors;
+ */
+.noUi-draggable {
+  cursor: w-resize;
+}
+
+.noUi-vertical .noUi-draggable {
+  cursor: n-resize;
+}
+
+.noUi-handle {
+  cursor: default;
+  -webkit-box-sizing: content-box !important;
+  -moz-box-sizing: content-box !important;
+  box-sizing: content-box !important;
+}
+
+.noUi-handle:active {
+  border: 8px solid #124b56;
+  border: 8px solid rgba(53,93,187,0.38);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  left: -14px;
+  top: -14px;
+}
+
+/* Disabled state;
+ */
+[disabled].noUi-connect,[disabled] .noUi-connect {
+  background: #B8B8B8;
+}
+
+[disabled].noUi-origin,[disabled] .noUi-handle {
+  cursor: not-allowed;
+}
+.caption{
+  font-family: auto;
+}

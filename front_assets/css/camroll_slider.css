@@ -1,0 +1,120 @@
+.crs-wrap {
+  position: relative;
+  box-sizing: border-box;
+}
+.crs-wrap * {
+  box-sizing: border-box;
+}
+.crs-screen {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.crs-screen-roll {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  transition: left 0.5s;
+}
+.crs-screen-item {
+  width: 100%;
+  height: 100%;
+ background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.crs-screen-item-content {
+  width: 100%;
+  height: calc(100% - 50px);
+  font-family: arial;
+  padding: 50px;
+}
+.crs-bar {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /*padding: 10px;*/
+}
+.crs-bar-roll-current {
+  width: 64px;
+  height: 50px;
+  border-radius: 5px;
+  border-bottom: 3px solid #d81921;
+  position: absolute;
+  /*border: 1px solid #ccc;*/
+  z-index: 1;
+  /*background-color: white;*/
+  left: 7px;
+  right: 0;
+  margin: auto;
+  /*top: 9px;*/
+}
+.crs-bar-roll-wrap {
+  height: 60px;
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+}
+.crs-bar-roll {
+  height: 60px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 0;
+  transition: left 0.2s;
+      width: 550px!important;
+      background-color: #fbfbfb;
+}
+.crs-bar-roll-item {
+  width: 75px;
+  height: 30px;
+  /*border-radius: 8px;*/
+  /*background-color: #fff;*/
+  background-size: cover;
+  background-position: center;
+  opacity: 0.85;
+  cursor: pointer;
+}
+.crs-bar-roll-item:not(:last-child) {
+  /*margin-right: 19px;*/
+      margin: 5px 10px 0px 10px;
+}
+
+/*,.*/
+.crs-bar-roll-item h6{
+color: black;
+font-size: 14px;
+margin-bottom: 0px;
+}
+.crs-bar-roll-item p{
+  color: black;
+  font-size: 11px;
+  margin-bottom: 0px;
+}
+/*<camroll slider css start>*/
+#my-slider {
+      width: 100%;
+      height: 404px;
+      color: white;
+    }
+@media (max-width: 640px) {
+  #my-slider .crs-bar-roll-current {
+    width: 38px;
+    height: 38px;
+  }
+
+  #my-slider .crs-bar-roll-item {
+    width: 30px;
+    height: 30px;
+  }
+  .crs-bar{
+    top: 231px;
+  }
+}
+/*<camroll slider css end>*/
